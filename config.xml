@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="ro.calcoolator.app" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Calcoolator</name>
+    <description>Calculator Alcoolemie - Blood Alcohol Content Calculator</description>
+    <author email="nightfallcontact0@gmail.com">
+        Andrei Pintilie
+    </author>
+    <content src="index.html" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+
+    <platform name="android">
+        <icon density="mdpi" src="res/android/mipmap-mdpi/icon.png" />
+        <icon density="hdpi" src="res/android/mipmap-hdpi/icon.png" />
+        <icon density="xhdpi" src="res/android/mipmap-xhdpi/icon.png" />
+        <icon density="xxhdpi" src="res/android/mipmap-xxhdpi/icon.png" />
+        <icon density="xxxhdpi" src="res/android/mipmap-xxxhdpi/icon.png" />
+    </platform>
+
+    <platform name="ios">
+        <icon src="res/Assets.xcassets/AppIcon.appiconset/16.png" width="16" height="16" />
+        <icon src="res/Assets.xcassets/AppIcon.appiconset/29.png" width="29" height="29" />
+        <icon src="res/Assets.xcassets/AppIcon.appiconset/40.png" width="40" height="40" />
+        <icon src="res/Assets.xcassets/AppIcon.appiconset/60.png" width="60" height="60" />
+        <icon src="res/Assets.xcassets/AppIcon.appiconset/76.png" width="76" height="76" />
+        <icon src="res/Assets.xcassets/AppIcon.appiconset/83.5.png" width="83.5" height="83.5" />
+        <icon src="res/Assets.xcassets/AppIcon.appiconset/1024.png" width="1024" height="1024" />
+    </platform>
+
+</widget>
