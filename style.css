@@ -1,0 +1,295 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f9faff;
+    color: #222;
+    line-height: 1.5;
+    font-size: 16px
+}
+
+h1 {
+    display: flex;
+    justify-content: center
+}
+
+.redtext {
+    color: red
+}
+
+button,
+input,
+select {
+    margin: 8px 0 16px 0;
+    width: 100%;
+    padding: 12px 14px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 1.8px solid #ccc;
+    border-radius: 6px;
+    transition: border-color .3s, box-shadow .3s;
+    font-family: inherit
+}
+
+input:focus,
+select:focus {
+    outline: 0;
+    border-color: #1a73e8;
+    box-shadow: 0 0 8px rgba(26, 115, 232, .3)
+}
+
+.input-error {
+    border-color: #e74c3c !important;
+    background-color: #fdecea;
+    box-shadow: 0 0 5px 1px rgba(231, 76, 60, .5)
+}
+
+.mesaj-eroare {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: -12px;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+button {
+    background-color: #1a73e8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 12px 0;
+    font-weight: 600;
+    transition: background-color .3s ease;
+    user-select: none
+}
+
+button:disabled {
+    background-color: #a3c1f7;
+    cursor: not-allowed;
+    color: #e1e7fb;
+    box-shadow: none
+}
+
+button:hover:not(:disabled) {
+    background-color: #155bb5
+}
+
+button:active:not(:disabled) {
+    background-color: #0f437a
+}
+
+.drink-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 15px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .05);
+    color: #333
+}
+
+.drink-entry button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 6px 14px;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: background-color .3s ease;
+    margin-left: 10px
+}
+
+.drink-entry button:hover {
+    background-color: #c0392b
+}
+
+#rezultate {
+    margin-top: 20px;
+    background: #e8f0fe;
+    border: 1px solid #aecbfa;
+    padding: 18px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #1a237e;
+    min-height: 80px;
+    box-shadow: 0 2px 8px rgba(26, 115, 232, .15);
+    transition: background-color .4s ease, color .4s ease, opacity .5s ease;
+    opacity: 1;
+    position: relative;
+    overflow: hidden
+}
+
+#rezultate.calculeaza {
+    background-color: #ddd !important;
+    color: #333 !important;
+    opacity: 1 !important;
+    font-weight: 600;
+    font-style: normal
+}
+
+.calculeaza .puncte {
+    display: inline-block;
+    margin-left: 5px;
+    letter-spacing: 2px
+}
+
+.calculeaza .puncte span {
+    display: inline-block;
+    opacity: 0;
+    animation: fadeDots 1.5s infinite
+}
+
+.calculeaza .puncte span:nth-child(1) {
+    animation-delay: 0s
+}
+
+.calculeaza .puncte span:nth-child(2) {
+    animation-delay: .3s
+}
+
+.calculeaza .puncte span:nth-child(3) {
+    animation-delay: .6s
+}
+
+@keyframes fadeDots {
+
+    0%,
+    20% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+}
+
+#mesajEroare {
+    color: #e74c3c;
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-size: 15px;
+    min-height: 20px
+}
+
+@media (max-width:480px) {
+    body {
+        padding: 15px 40px
+    }
+
+    button {
+        padding: 14px 0
+    }
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    border-top: 1px solid #ddd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+footer a {
+    color: #1a73e8;
+    text-decoration: none;
+    font-weight: 600
+}
+
+footer a:hover {
+    text-decoration: underline
+}
+
+label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    margin-top: 12px;
+    margin-bottom: 4px;
+    font-size: 15px;
+    color: #333
+}
+
+label i {
+    color: #1a73e8;
+    min-width: 16px;
+    text-align: center
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    margin: 0 8px;
+    text-decoration: none;
+    transition: transform .3s ease;
+    border-bottom: none;
+    cursor: pointer;
+    color: inherit
+}
+
+.social-icons a:focus,
+.social-icons a:hover {
+    transform: scale(1.1);
+    text-decoration: none;
+    outline: 0
+}
+
+.social-icons a.instagram i {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.social-icons a.facebook i {
+    background: linear-gradient(45deg, #1877f2, #69a1ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.social-icons a.whatsapp i {
+    background: linear-gradient(45deg, #25d366, #7be495);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.social-icons a.email i {
+    background: linear-gradient(45deg, #d93025, #f28b82);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.social-icons a.github i {
+    background: linear-gradient(45deg, #333, #bbb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.social-icons a.bmac i {
+    background: linear-gradient(45deg, red, #ff6e6e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
