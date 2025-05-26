@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calcoolator - Politica de Confidențialitate</title>
+    <title>Calcoolator - Politica de Confidențialitate / Privacy Policy</title>
     <link rel="icon" href="assets/icon.ico" />
     <link rel="stylesheet" href="style.css" />
     <link
@@ -18,6 +18,7 @@
   <h1>C<span class="redtext">alcool</span>ator</h1>
 
   <hr />
+  <h2>RO:</h2>
   <p>
     <strong>Disclaimer:</strong> Acest calculator este doar estimativ și nu trebuie folosit ca bază legală.
     Conform legii din România, șoferii nu au voie să conducă sub influența alcoolului. Limita este 0‰ alcool în sânge.
@@ -40,7 +41,34 @@
       Nu folosim servicii de analiză, nu urmărim activitatea utilizatorului și nu partajăm date cu terțe părți.
     </p>
     <p>
-      Pentru întrebări sau nelămuriri, ne puteți contacta la:<br>
+      Pentru întrebări sau nelămuriri, mă puteți contacta la:<br>
+      📧 <a href="mailto:nightfallcontact0@gmail.com">nightfallcontact0@gmail.com</a>
+    </p>
+  </section>
+  <hr />
+  <h2>EN:</h2>
+  <p>
+    <strong>Disclaimer:</strong> This calculator is for estimation purposes only and should not be used as a legal basis.
+    According to Romanian law, drivers are not allowed to drive under the influence of alcohol. The limit is 0‰ blood alcohol content.
+  </p>
+
+  <blockquote style="font-style: italic; color: #555; border-left: 4px solid #ccc; padding-left: 10px; margin: 15px 0;">
+    <strong>Law regarding driving under the influence of alcohol (Emergency Ordinance 195/2002, Art. 100):</strong><br>
+    “Driving a vehicle on public roads by a person who has a blood alcohol concentration higher than 0.00 g/l constitutes either a contravention or a criminal offense, depending on the exceeded alcohol limit.<br>
+    The allowed limit is 0.00 g/l blood alcohol content. Exceeding this limit results in legal sanctions, including fines, license suspension, or imprisonment.”
+  </blockquote>
+
+  <section style="margin-top: 40px;">
+    <h2>Privacy Policy</h2>
+    <p>
+      This app does not collect, store, or transmit any personal information from users.
+      All data entered by the user remains solely on their device and is used exclusively to estimate the blood alcohol content (BAC).
+    </p>
+    <p>
+      We do not use analytics services, do not track user activity, and do not share data with third parties.
+    </p>
+    <p>
+      For questions or concerns, you can contact me at:<br>
       📧 <a href="mailto:nightfallcontact0@gmail.com">nightfallcontact0@gmail.com</a>
     </p>
   </section>
@@ -50,6 +78,10 @@
     <p style="margin: 0 0 10px 0; font-weight: 500; font-size: 1rem;">
       Copyright &copy; 2025 Andrei Pintilie. Toate drepturile rezervate.
     </p>
+
+    <button id="btnInapoi" class="btnInapoi">
+      <i class="fas fa-arrow-left"></i> Back to the app
+    </button>
 
     <br><br>
     <div class="social-icons" style="display: flex; justify-content: center; gap: 15px; font-size: 1.8rem;">
@@ -73,6 +105,11 @@
       </a>
     </div>
   </footer>
-
+  <script>
+    // Buton "back"
+    document.getElementById('btnInapoi').addEventListener('click', () => {
+      window.history.back();
+    });
+  </script>
 </body>
 </html>
